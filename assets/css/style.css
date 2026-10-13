@@ -146,6 +146,7 @@ img {
   border-radius: 999px;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .button:hover,
@@ -160,7 +161,7 @@ img {
 }
 
 .button.secondary {
-  border: 1px solid var(--line);
+  border-color: var(--line);
   background: rgba(15, 23, 42, 0.5);
   color: var(--text);
 }
@@ -320,10 +321,21 @@ img {
   border-color: rgba(251, 191, 36, 0.7);
 }
 
-.share-row .button {
-  padding: 0.6rem 0.9rem;
-  border-radius: 12px;
+.share-row {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
+
+.share-button {
+  font-size: 0.95rem;
+}
+
+.share-button.whatsapp { background: #25D366; color: #07200A; }
+.share-button.facebook { background: #1877F2; color: white; }
+.share-button.twitter { background: #1DA1F2; color: white; }
+.share-button.email { background: #444; color: white; }
 
 .site-footer {
   padding: 1.75rem 0 3rem;
